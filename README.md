@@ -68,12 +68,16 @@ Since FM demodulation relies on time intervals of the message, the demodulated o
 ### Output
 
 - Sine wave
+  
   ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20sine%20wave%20information.JPG)
   
 - Square wave
+  
   ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20square%20wave%20information.JPG)
 
+
 - Triangular wave
+  
   ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20triangular%20wave%20information.JPG)
 
 
