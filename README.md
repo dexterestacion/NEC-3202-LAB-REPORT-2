@@ -1,4 +1,3 @@
-
 <details>
 <summary>Experiment 9</summary>
 
@@ -32,10 +31,6 @@ The output of the signal shows that the carrier frequency increases when the mes
 
 Additional photo: Using a transducer such as a microphone that shows clearly the Frequency modulation.
 
-### Observations
-
-
-
 </details>
 
 <details>
@@ -60,15 +55,16 @@ A frequency demodulator is a type of detector used to demodulate an FM signal fr
 Based on the block diagram, our information is a variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, this will basically switch from positve saturation voltage of the comparator to ground based on the connection and the voltage level of its inputs, this will also cancel out any noise from the signal since comparator relies only in voltage level of the signal. Since FM stores information in its frequency, this can be used in comparator in order to remove the noise from the FM signal,  the output of the comparator will then be connected to the zero-crossing detector, which will output a pulse every time the signal crosses/ reached 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave or basically generate a pulse, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD corresponds to the information signal, This will then be fed into the baseband LPF to filter out the high-frequency signals under Baseband frequency, effectively recovering the original information
 
  
-> ⓘ NOTE: A comparator is an electronic device used to compare 2 input voltage from the Inverting input(REF) and non-inverting input(IN), if non-inverting is high, the comparator switch to positive saturation voltage, if the voltage in inverting input is greater than the inverting input, then the output will switch to negative saturation or GND based on the applied connection to the negative supply of the comparator, but in our case the comparator of the telecoms trainer, it is connected in GND(0V).
+> ⓘ NOTE: A comparator is an electronic device used to compare 2 input voltage from the Inverting input(REF) and non-inverting input(IN), if non-inverting is high, the comparator switch to positive saturation voltage, if the voltage in inverting input is greater than the inverting input, then the output will switch to negative saturation or GND based on the applied connection to the negative supply of the comparator, in our case the comparator of the telecoms trainer, it is connected in GND(0V). This basically converts analog signal into digital signal, hence, it is used for Analog to Digital converters.
 
 ![Comparator photo](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Comparator%20image.JPG)
 
 ![Comparator output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Comparator%20output.JPG)
 
-> A zero voltage detector is an electronic device used to detect an input signal if it 
+> A zero voltage detector is a type of electronic circuit built in a voltage comparator, it is used to detect an AC signal whenever it passes/crosses through 0V, producing a short pulse. The EMONA netTIMS can also be adjust the width of the pulse and delay its output.
 
-### Setup
+### Setup(Emona netTIMS online setuo)
+![Emona FM Demod setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2010/FM%20Demodulator%20setup.JPG)
 
 ### Output
 
@@ -78,7 +74,7 @@ Since FM demodulation relies on time intervals of the message, the demodulated o
 
 ### Theoretical setup(Using EMONA net*TIMS Telecoms trainer online)
 
-![EMONA TIMS Theoretical](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Theories/MIXED%20SETUP.JPG)
+![EMONA TIMS Theoretical](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Observations/MIXED%20SETUP.JPG)
 
 ### Output
 
