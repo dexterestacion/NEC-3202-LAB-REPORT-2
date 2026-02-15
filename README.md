@@ -33,11 +33,11 @@ The output of the signal shows that the carrier frequency increases when the dig
 
 ### Introduction
 
-A frequency demodulator is a type of detector used to demodulate FM signal from the medium, which is basically different from an FM signal. the demodulation process of  an FM signal is more complex compare to AM detectors since it uses a zero-crossing detector(ZCD) and a voltage comparator circuit to demodulate the signal
+A frequency demodulator is a type of detector used to demodulate an FM signal from the medium. The demodulation process of  an FM signal is more complex compared to AM detectors since it uses a zero-crossing detector(ZCD) and a voltage comparator circuit to demodulate and recover the information.
 
 ### Block diagram
 
-based on the block diagram, our information is a Varable DC signal, connected to the input of the VCO, to create the FM signal, for the demodulation, the signal will the be fed to the voltage comparator, and the output will be connected to the zero-crossing detector
+Based on the block diagram, our information is a Variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, or basically clipping off the sinusoidal peak into square wave, and the output will be connected to the zero-crossing detector, which will output a pulse every time the signal crosses 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD will corresponds to the information, . This will then be fed into the baseband LPF to filter out the high-frequency signals under Baseband frequency, effecively recovering the orignal information
 
 ### Setup
 
