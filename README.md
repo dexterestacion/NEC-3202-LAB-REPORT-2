@@ -50,7 +50,7 @@ In progress.
 # Experiment 9
   - https://blog.truegeometry.com/api/exploreHTML/42c699040c9d7b230a38fff56c680c96.exploreHTML
   - https://electronicscoach.com/frequency-modulation.html
-  - 
+
   
 # Experiment 10
   -
