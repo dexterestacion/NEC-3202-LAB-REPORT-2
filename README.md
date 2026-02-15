@@ -61,12 +61,22 @@ Based on the block diagram, our information is a variable DC signal connected to
 
 ![Comparator output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Comparator%20output.JPG)
 
-> A zero voltage detector is a type of electronic circuit built in a voltage comparator, it is used to detect an AC signal whenever it passes/crosses through 0V, producing a short pulse. The EMONA netTIMS can also be adjust the width of the pulse and delay its output.
+> A zero voltage detector is a type of electronic circuit built in a voltage comparator, it is used to detect an AC signal whenever it passes/crosses through 0V, producing a short pulse. The EMONA netTIMS has a Zero-crossing detector built in to the trainer that can vary the width of the pulse and delay.
 
 ### Setup(Emona netTIMS online setuo)
 ![Emona FM Demod setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2010/FM%20Demodulator%20setup.JPG)
 
 ### Output
+
+![Demodulator output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/FM%20Demodulator%20Output.JPG)
+
+https://github.com/user-attachments/assets/5fc33f9f-1f2e-48b0-972a-834664cbb214
+
+the video shows that the DC signal is recovered when we vary the variable DC voltage knob, however, the scope's channel 2 is not configured in DC coupling, but its output whenever we vary the signal changes proportionally.
+
+https://github.com/user-attachments/assets/8b545b04-2221-4870-9c7b-3aee45ca5166
+
+comparing the output of the ZCD after filtering, 
 
 ### Observations
 
@@ -93,22 +103,33 @@ Since FM demodulation relies on time intervals of the message, the demodulated o
 </details>
 
 <details>
-<summary>Experiment 11</summary>
+<summary>Experiment 11 - Sampling and reconstruction</summary>
+
+### Objectives
+- To familiarize with digital transmission
+- To understand the principles of PAM and Quantization
+
+### Introduction
+
+### Setup
+
+### Output
+
+ 
+</details>
+
+<details>
+<summary>Experiment 12 - PCM encoding</summary>
 In progress.
 </details>
 
 <details>
-<summary>Experiment 12</summary>
+<summary>Experiment 13 - PCM decoding</summary>
 In progress.
 </details>
 
 <details>
-<summary>Experiment 13</summary>
-In progress.
-</details>
-
-<details>
-<summary>Experiment 14</summary>
+<summary>Experiment 14 - BW limiting and restoring digital signals</summary>
 In progress.
 </details>
 
@@ -132,9 +153,6 @@ In progress.
   -
 ### Experiment 14
   -
-### Experiment 15
-  -
-### Experiment 16
-  -
+
   
 </details>
