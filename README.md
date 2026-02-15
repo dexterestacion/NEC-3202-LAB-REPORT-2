@@ -4,7 +4,7 @@
 
 ### Objectives
 - To familiarize with Frequency modulation
-- To understand the principles of FM
+- To understand the principles and theories of Frequency modulation
 - To create a Frequency Modulator
 
 ### Introduction
@@ -12,20 +12,37 @@ A Frequency modulation is a  technique that transmits information into a varying
 
 ### Block diagram
 
-based on the block diagram it shows that the message is a 2kHz digital masters signals, connected to the Voltage controlled Oscillator module input to the Emona which as a 10kHz carrier, the first channel of the oscilloscope will be connected directly to the Information signal, while channel 2 will be connected to the output of the VCO, basically the expected output is that the output frequency from the VCO should be directly proportional to the signal when the signal is at positive peak.
+based on the block diagram it shows that the message is a 2kHz digital masters signals, connected to the Voltage controlled Oscillator module input to the Emona which as a 10kHz carrier, the first channel of the oscilloscope will be connected directly to the Information signal, while channel 2 will be connected to the output of the VCO, basically the expected output is that the output frequency from the VCO should be directly proportional to the signal when the signal is at the positive peak.
 
 
 ### Setup
 
 ### Output
 
-The output of the signal shows that the carrier frequency increases when the digital message is at a higher voltage, and decreases when the digital message is low, which means it's frequency is directly proportional to the information signal, which is basically how VCO works, forming a Frequency modulation signal that is compatible to the medium.
+The output of the signal shows that the carrier frequency increases when the digital message is at a higher voltage, and decreases when the digital message is low, which means it's frequency is directly proportional to the information signal(its basically how a VCO works) to create a Frequency modulation signal that is compatible with the medium.
 
 </details>
 
 <details>
 <summary>Experiment 10</summary>
-In progress.
+
+### Objectives
+- To familiarize with Frequency demodulation
+- To understand the principles and theories of Frequency demodulation
+- To create a Frequency demodulator
+
+### Introduction
+
+A frequency demodulator is a type of detector used to demodulate FM signal from the medium, which is basically different from an FM signal. the demodulation process of  an FM signal is more complex compare to AM detectors since it uses a zero-crossing detector(ZCD) and a voltage comparator circuit to demodulate the signal
+
+### Block diagram
+
+based on the block diagram, our information is a Varable DC signal, connected to the input of the VCO, to create the FM signal, for the demodulation, the signal will the be fed to the voltage comparator, and the output will be connected to the zero-crossing detector
+
+### Setup
+
+### Output
+
 </details>
 
 <details>
