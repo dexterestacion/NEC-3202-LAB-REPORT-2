@@ -10,16 +10,29 @@
 ### Introduction
 A Frequency modulation is a  technique that transmits information into a varying frequency according to its amplitude and its signal. one of the advantage of using Frequency modulation is the ability to transmit message without picking up much any electrical noise to the medium, which is one of the disadvantage of AM and oher types of Amplitude modulation such as DSBSC, SSBSC because it is a varying amplitude signal, which is more susceptive from picking up electrical noise to medium, Frequency modulation also provides high quality sound when transmitting the information. However, the disadvantage of using Frequency modulation is that its transmission is complex compared to AM, and it's also expensive to operate. An FM detector usually needs an antenna, specifically a dipole antenna, to receive the transmitted signal while AM doesn't need to; this is because FM has a high-frequency component compared to AM, which creates a shorter wavelength, making the  signal propagation performance poor.
 
+![FM Demo](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%209/FM%20Demonstration.JPG)
+
 ### Block diagram
 
 based on the block diagram it shows that the message is a 2kHz digital masters signals, connected to the Voltage controlled Oscillator module input to the Emona which as a 10kHz carrier, the first channel of the oscilloscope will be connected directly to the Information signal, while channel 2 will be connected to the output of the VCO, basically the expected output is that the output frequency from the VCO should be directly proportional to the signal when the signal is at the positive peak.
 
+![FM Block diagram](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%209/FM%20BD.JPG)
 
 ### Setup
 
+![EMONA Telecoms trainer setup for Frequency modulation](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%209/FM%20setup.JPG)
+
 ### Output
 
-The output of the signal shows that the carrier frequency increases when the digital message is at a higher voltage, and decreases when the digital message is low, which means it's frequency is directly proportional to the information signal(its basically how a VCO works) to create a Frequency modulation signal that is compatible with the medium.
+![Signal comparison after modulation](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%209/FM%20Output%20masters.jpg)
+
+The output of the signal shows that the carrier frequency increases when the message is at a higher voltage, and decreases when the message is low, which means it's frequency is directly proportional to the information signal(its basically how a VCO works) to create a Frequency modulation signal that is compatible with the medium.
+
+![Signal comparison with Microphone](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%209/FM%20Output%20microphone.jpg)
+
+Additional photo: Using a transducer such as a microphone that shows clearly the Frequency modulation.
+
+## Theories
 
 </details>
 
@@ -37,11 +50,29 @@ A frequency demodulator is a type of detector used to demodulate an FM signal fr
 
 ### Block diagram
 
-Based on the block diagram, our information is a Variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, or basically clipping off the sinusoidal peak into square wave, and the output will be connected to the zero-crossing detector, which will output a pulse every time the signal crosses 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD will corresponds to the information, . This will then be fed into the baseband LPF to filter out the high-frequency signals under Baseband frequency, effecively recovering the orignal information
+Based on the block diagram, our information is a Variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, or basically clipping off the sinusoidal peak into square wave, and the output will be connected to the zero-crossing detector, which will output a pulse every time the signal crosses 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD will corresponds to the information, This will then be fed into the baseband LPF to filter out the high-frequency signals under Baseband frequency, effectively recovering the original information
 
 ### Setup
 
 ### Output
+
+
+## Theories
+
+Since FM demodulation relies on time intervals of the message, the demodulated output should be expected as a Sine wave, even when we have information with a different waveform shape.
+
+## Theoretical setup(Using EMONA TIMS Telecoms trainer simulation)
+https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Theories/MIXED%20SETUP.JPG
+
+## Output
+
+- Sine wave
+  !
+- Square wave
+- Triangular wave
+
+
+
 
 </details>
 
