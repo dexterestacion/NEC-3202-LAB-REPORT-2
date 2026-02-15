@@ -1,5 +1,5 @@
 <details>
-<summary>Experiment 9</summary>
+<summary>Experiment 9: FM Modulation</summary>
 
 ### Objectives
 - To familiarize with Frequency modulation
@@ -34,7 +34,7 @@ Additional photo: Using a transducer such as a microphone that shows clearly the
 </details>
 
 <details>
-<summary>Experiment 10</summary>
+<summary>Experiment 10: FM Demodulation</summary>
 
 ### Objectives
 - To familiarize with Frequency demodulation
