@@ -57,20 +57,24 @@ Based on the block diagram, our information is a Variable DC signal connected to
 ### Output
 
 
-## Theories
+### Additional observation
 
 Since FM demodulation relies on time intervals of the message, the demodulated output should be expected as a Sine wave, even when we have information with a different waveform shape.
 
-## Theoretical setup(Using EMONA TIMS Telecoms trainer simulation)
-https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Theories/MIXED%20SETUP.JPG
+### Theoretical setup(Using EMONA TIMS Telecoms trainer simulation)
 
-## Output
+![EMONA TIMS Theoretical](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Theories/MIXED%20SETUP.JPG)
+
+### Output
 
 - Sine wave
-  !
+  ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20sine%20wave%20information.JPG)
+  
 - Square wave
-- Triangular wave
+  ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20square%20wave%20information.JPG)
 
+- Triangular wave
+  ![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20triangular%20wave%20information.JPG)
 
 
 
@@ -104,13 +108,10 @@ In progress.
   
   - https://blog.truegeometry.com/api/exploreHTML/42c699040c9d7b230a38fff56c680c96.exploreHTML
   - https://electronicscoach.com/frequency-modulation.html
-
-
-
-
   
 ### Experiment 10
-  -
+  - https://user.eng.umd.edu/~tretter/commlab/c6713slides/ch8.pdf
+  - 
 ### Experiment 11
   -
 ### Experiment 12
