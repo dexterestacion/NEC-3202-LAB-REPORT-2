@@ -52,7 +52,7 @@ A frequency demodulator is a type of detector used to demodulate an FM signal fr
 ![Block diagram of FM Modulator and demodulator](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2010/FM%20Demodulator%20BD.JPG)
 
 
-Based on the block diagram, our information is a variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, this will basically switch from positve saturation voltage of the comparator to ground based on the connection and the voltage level of its inputs, this will also cancel out any noise from the signal since comparator relies only in voltage level of the signal. Since FM stores information in its frequency, this can be used in comparator in order to reduce the noise from the FM signal,  the output of the comparator will then be connected to the zero-crossing detector, which will output a pulse every time the signal crosses/reached 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave or basically generate a pulse, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD corresponds to the information signal, the continuous pulse coming from the zero-crossing detector will be converted by the baseband LPF into an analog voltage smoothing out the signal while also blocking the high frequency component of the FM signal and passes the low frequency component, effectively recovering the original information.
+Based on the block diagram, our information is a variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, this will basically switch from positve saturation voltage of the comparator to ground based on the connection and the voltage level of its inputs, this will also reduce noise from the signal since comparator relies only in voltage level of the signal. Since FM stores information in its frequency, this can be used in comparator in order to reduce the noise from the FM signal,  the output of the comparator will then be connected to the zero-crossing detector, which will output a pulse every time the signal crosses/reached 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave or basically generate a pulse, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD corresponds to the information signal, the continuous pulse coming from the zero-crossing detector will be converted by the baseband LPF into an analog voltage smoothing out the signal while also blocking the high frequency component of the FM signal and passes the low frequency component, effectively recovering the original information.
 
  
 > ⓘ NOTE: A comparator is an electronic device used to compare 2 input voltage from the Inverting input(REF) and non-inverting input(IN), if non-inverting input voltage is greater than inverting input, the comparator switch to positive saturation voltage, if the voltage in inverting input is greater than the inverting input, then the output will switch to negative saturation or GND based on the applied connection to the negative supply of the comparator, but in our case the comparator of the telecoms trainer is connected in GND(0V). This basically converts analog signal into digital signal, hence, it is used for Analog to Digital converters.
@@ -195,6 +195,51 @@ if the sampling frequency increased, it improved the quality of the reconstructi
 <details>
 <summary>Experiment 12 - PCM encoding</summary>
 
+### Objectives
+
+
+### Introduction
+
+A pulse code modulation(PCM) is a type of digital modulation technique that converts analog signal into binary sequence of 1s and 0s. PCM uses sampling, quantizing, and encoding in order for analog signal to be converted into binary system. This process was developed in 1937, primarily used for telephony, space communications, and digital audio processing during the 1960s and 70s.
+
+### Block diagram
+
+![PCM Encoder block diagram with 0V input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%200V%20Input.JPG)
+
+
+### Setup
+
+![PCM Encoder setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2012/FS%20and%20Digital%20signal%20comparison.jpg)
+
+### Output
+
+- CH1(Frame synchronization) and CH2(8kHz digital clock signal) comparison
+  
+![PCM Encoder output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2012/Clock%20signal%20and%20Frame%20synchonization%20signal.jpg)
+
+- CH1(Frame synchronization) and CH2(PCM DATA) comparison
+
+![FS and PCM DATA Comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2012/Frame%20synchronization%20and%20PCM%20output%20data.jpg)
+### Block diagram
+
+![PCM Encoder block diagram with VDC input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%20Variable%20DC%20Input.JPG)
+
+
+### Setup
+
+![PCM Encoder setup]()
+
+### Output
+
+![PCM Encoder output]()
+
+
+
+### Observation
+
+### Setup
+
+### Output
 
 
 </details>
