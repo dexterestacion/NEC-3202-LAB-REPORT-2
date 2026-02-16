@@ -131,6 +131,16 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ![Natural sampling and message signal comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Natural%20samping%20and%20message%20comparison.jpg)
 
+### Block diagram: Sample and hold sampling
+
+### Setup: Sample and hold sampling
+
+![S&H Setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Sample%20and%20hold%20setup.jpg)
+
+## Setup: Sample and hold sampling
+![Sample and hold output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Sample%20and%20hold%20output.jpg)
+
+![S&H and message comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/S%26H%20and%20message%20comparison.jpg)
 
 
 </details>
