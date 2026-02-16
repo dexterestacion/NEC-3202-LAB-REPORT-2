@@ -131,17 +131,24 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ![Natural sampling and message signal comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Natural%20samping%20and%20message%20comparison.jpg)
 
-### Block diagram: Sample and hold sampling
+### Block diagram: Sample and hold/w tunable LPF(message reconstruction)
 
-### Setup: Sample and hold sampling
+![S&H with LPF BD](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2011/S%26H%20%20and%20reconstruction%20BD.jpg)
 
-![S&H Setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Sample%20and%20hold%20setup.jpg)
+### Setup: Sample and hold/w tunable LPF(message reconstruction)
 
-## Setup: Sample and hold sampling
+![S&H Setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Sample%20and%20hold%20%20original%20message%20reconstruction%20setup.jpg)
+
+### Output: Sample and hold/w tunable LPF(message reconstruction)
+
+- S&H Output
 ![Sample and hold output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Sample%20and%20hold%20output.jpg)
 
+- Original message and S&H comparison
 ![S&H and message comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/S%26H%20and%20message%20comparison.jpg)
 
+- Reconstructed Message to Original message comaparison
+![Reconstructed message and original message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/S%26H%20Reconstructed%20message%20comparison.jpg)
 
 </details>
 
