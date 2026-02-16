@@ -121,6 +121,8 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ![Natural sampling BD](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2011/Natural%20sampling%20BD.JPG)
 
+baed on the diagram, it shows that the 2kHz signal will be our information signal, connected to the input of the dual analog switch, the 8kHz digital signal will serve as the switching component or the sampling frequency that will let the input signal pass to the output whenever the control signal is in positive peak and blocks it when the control signal is in 0V, generating a Pulse amplitude modulation(Natural sampling).
+
 ### Setup: Natural sampling
 
 ![Natural sampling setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Natural%20sampling%20setup.jpg)
@@ -131,15 +133,19 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ![Natural sampling and message signal comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Natural%20samping%20and%20message%20comparison.jpg)
 
+as expected, the signal will get pass through when the sampling frequency is at positive peak voltage, and blocks it when it reach the negative peak voltage, forming a Natural sampling.
+
 ### Block diagram: Sample and hold/w tunable LPF(message reconstruction)
 
 ![S&H with LPF BD](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2011/S%26H%20%20and%20reconstruction%20BD.jpg)
 
-### Setup: Sample and hold/w tunable LPF(message reconstruction)
+Based on the block diagram, the dual analog switch circuit will be replaced with Sample-and-hold circuit, the princple of S&H sampling is that it holds the first constant value until the next sampling frequency 
+
+### Setup: Sample and hold sampling/w tunable LPF(message reconstruction)
 
 ![S&H Setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Sample%20and%20hold%20%20original%20message%20reconstruction%20setup.jpg)
 
-### Output: Sample and hold/w tunable LPF(message reconstruction)
+### Output: Sample and hold sampling/w tunable LPF(message reconstruction)
 
 - S&H Output
 ![Sample and hold output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Sample%20and%20hold%20output.jpg)
@@ -153,7 +159,7 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ### Observation
 
-if the sampling frequency increased, it improved the quality of the reconstruction of the signal
+if the sampling frequency increased, it improved the quality of the reconstruction of the signal because it prevents aliasing and provide much accuracy when it comes to reconstructing the signal
 
 ### Setup: Natural sampling using VCO
 
@@ -184,13 +190,13 @@ if the sampling frequency increased, it improved the quality of the reconstructi
 - if VCO frequency is high
   
 ![S&H Sampling Under high frequency sampling](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Observation%20output/S%26H%20under%20high%20frequency%20sampling.JPG)
-
-
 </details>
 
 <details>
 <summary>Experiment 12 - PCM encoding</summary>
-In progress.
+
+
+
 </details>
 
 <details>
