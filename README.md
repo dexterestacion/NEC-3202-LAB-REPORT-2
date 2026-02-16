@@ -150,6 +150,42 @@ A natural sampling is a form of modulation technique that involves multiplying t
 - Reconstructed Message to Original message comaparison
 ![Reconstructed message and original message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/S%26H%20Reconstructed%20message%20comparison.jpg)
 
+
+### Observation
+
+if the sampling frequency increased, it improved the quality of the reconstruction of the signal
+
+### Setup: Natural sampling using VCO
+
+![Natural sampling VCO setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Observation%20setup/Natural%20sampling%20setup.JPG)
+
+### Output: Natural sampling using VCO
+
+- if VCO frequency is low
+
+![Natural sampling under low frequency](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Observation%20output/Natural%20sampling%20under%20low%20frequency%20sampling.JPG)
+
+- if VCO frequency is high
+
+![Natural sampling under high frequency](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Observation%20output/Natural%20sampling%20under%20high%20frequency%20sampling.JPG)
+
+
+### Setup: S&H Sampling using VCO
+
+![S&H Sampling with VCO setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Observation%20setup/S%26H%20Sampling%20VCO%20observation%20setup.JPG)
+
+### Output: S&H Sampling using VCO
+
+- if VCO frequency is low
+  
+![S&H Sampling Under low frequency sampling](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Observation%20output/S%26H%20under%20low%20frequency%20sampling.JPG)
+
+
+- if VCO frequency is high
+  
+![S&H Sampling Under high frequency sampling](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2011/Observation%20output/S%26H%20under%20high%20frequency%20sampling.JPG)
+
+
 </details>
 
 <details>
