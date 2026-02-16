@@ -227,11 +227,11 @@ A pulse code modulation(PCM) is a type of digital modulation technique that conv
 
 ### Setup
 
-![PCM Encoder setup]()
+![PCM Encoder DCV setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2012/PCM%20Setup%20DCV.jpg)
 
 ### Output
 
-![PCM Encoder output]()
+[![PCM Encoder output]()](https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a)
 
 
 
