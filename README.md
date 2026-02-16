@@ -196,8 +196,10 @@ if the sampling frequency increased, it improved the quality of the reconstructi
 <summary>Experiment 12 - PCM encoding</summary>
 
 ### Objectives
-
-
+- To familarize PCM Encoding
+- Understand the basic principle of Pulse Code Modulation (PCM)
+- Analyze the PCM output for 0V input and variable DC input.
+- Compare and observe the relationship between the analog input voltage and the generated PCM digital data.
 ### Introduction
 
 A pulse code modulation(PCM) is a type of digital modulation technique that converts analog signal into binary sequence of 1s and 0s. PCM uses sampling, quantizing, and encoding in order for analog signal to be converted into binary system. This process was developed in 1937, primarily used for telephony, space communications, and digital audio processing during the 1960s and 70s.
@@ -206,6 +208,7 @@ A pulse code modulation(PCM) is a type of digital modulation technique that conv
 
 ![PCM Encoder block diagram with 0V input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%200V%20Input.JPG)
 
+the PCM encoder for EMONA combines the process of Sampling, Quantization, and encoding into a single block, making it easy to implement rather than using separate dual analog switch for sampling and quantization
 
 ### Setup
 
