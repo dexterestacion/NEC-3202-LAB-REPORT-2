@@ -52,10 +52,10 @@ A frequency demodulator is a type of detector used to demodulate an FM signal fr
 ![Block diagram of FM Modulator and demodulator](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2010/FM%20Demodulator%20BD.JPG)
 
 
-Based on the block diagram, our information is a variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, this will basically switch from positve saturation voltage of the comparator to ground based on the connection and the voltage level of its inputs, this will also cancel out any noise from the signal since comparator relies only in voltage level of the signal. Since FM stores information in its frequency, this can be used in comparator in order to remove the noise from the FM signal,  the output of the comparator will then be connected to the zero-crossing detector, which will output a pulse every time the signal crosses/ reached 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave or basically generate a pulse, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD corresponds to the information signal, This will then be fed into the baseband LPF to filter out the high-frequency signals under Baseband frequency, effectively recovering the original information
+Based on the block diagram, our information is a variable DC signal connected to the input of the VCO to create the FM signal. For the demodulation, the signal will be fed to the voltage comparator to convert FM signal into square wave, this will basically switch from positve saturation voltage of the comparator to ground based on the connection and the voltage level of its inputs, this will also cancel out any noise from the signal since comparator relies only in voltage level of the signal. Since FM stores information in its frequency, this can be used in comparator in order to reduce the noise from the FM signal,  the output of the comparator will then be connected to the zero-crossing detector, which will output a pulse every time the signal crosses/reached 0V, effectively converting the output of the comparator signal into an equivalent rectangular wave or basically generate a pulse, this rectangular wave varies over time since it will based on the timing of the message whenever it's crossing 0V, which means the timing of the pulse of the ZCD corresponds to the information signal, the continuous pulse coming from the zero-crossing detector will be converted by the baseband LPF into an analog voltage smoothing out the signal while also blocking the high frequency component of the FM signal and passes the low frequency component, effectively recovering the original information.
 
  
-> ⓘ NOTE: A comparator is an electronic device used to compare 2 input voltage from the Inverting input(REF) and non-inverting input(IN), if non-inverting is high, the comparator switch to positive saturation voltage, if the voltage in inverting input is greater than the inverting input, then the output will switch to negative saturation or GND based on the applied connection to the negative supply of the comparator, in our case the comparator of the telecoms trainer, it is connected in GND(0V). This basically converts analog signal into digital signal, hence, it is used for Analog to Digital converters.
+> ⓘ NOTE: A comparator is an electronic device used to compare 2 input voltage from the Inverting input(REF) and non-inverting input(IN), if non-inverting input voltage is greater than inverting input, the comparator switch to positive saturation voltage, if the voltage in inverting input is greater than the inverting input, then the output will switch to negative saturation or GND based on the applied connection to the negative supply of the comparator, but in our case the comparator of the telecoms trainer is connected in GND(0V). This basically converts analog signal into digital signal, hence, it is used for Analog to Digital converters.
 
 ![Comparator photo](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2010/Comparator%20image.JPG)
 
@@ -63,7 +63,7 @@ Based on the block diagram, our information is a variable DC signal connected to
 
 > A zero voltage detector is a type of electronic circuit built in a voltage comparator, it is used to detect an AC signal whenever it passes/crosses through 0V, producing a short pulse. The EMONA netTIMS has a Zero-crossing detector built in to the trainer that can vary the width of the pulse and delay.
 
-### Setup(Emona netTIMS online setuo)
+### Setup(Emona netTIMS online setup)
 ![Emona FM Demod setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2010/FM%20Demodulator%20setup.JPG)
 
 ### Output
@@ -72,11 +72,11 @@ Based on the block diagram, our information is a variable DC signal connected to
 
 https://github.com/user-attachments/assets/5fc33f9f-1f2e-48b0-972a-834664cbb214
 
-the video shows that the DC signal is recovered when we vary the variable DC voltage knob, however, the scope's channel 2 is not configured in DC coupling, but its output whenever we vary the signal changes proportionally.
+The video shows that the DC signal is recovered when we vary the variable DC voltage knob, however, the scope's channel 2 is not configured in DC coupling, but its output whenever we vary the signal changes proportionally.
 
 https://github.com/user-attachments/assets/8b545b04-2221-4870-9c7b-3aee45ca5166
 
-comparing the output of the ZCD after filtering, 
+comparison of the output of the ZCD(CH1) after filtering(CH2) 
 
 ### Observations
 
@@ -90,15 +90,15 @@ Since FM demodulation relies on time intervals of the message, the demodulated o
 
 - Sine wave
   
-![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20sine%20wave%20information.JPG)
+![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Additional%20observation%20output/FM%20Demodulation%20with%20sine%20wave%20information.JPG)
    
 - Square wave
   
-![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20square%20wave%20information.JPG)
+![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Additional%20observation%20output/FM%20Demodulation%20with%20square%20wave%20information.JPG)
 
 - Triangular wave
   
-![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Theoretical%20Output/FM%20Demodulation%20with%20triangular%20wave%20information.JPG)
+![FM Demodulated signal using sine wave as message](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2010/Additional%20observation%20output/FM%20Demodulation%20with%20triangular%20wave%20information.JPG)
 
 </details>
 
@@ -106,16 +106,28 @@ Since FM demodulation relies on time intervals of the message, the demodulated o
 <summary>Experiment 11 - Sampling and reconstruction</summary>
 
 ### Objectives
-- To familiarize with digital transmission
+- To be familiar with digital transmission
 - To understand the principles of PAM and Quantization
 
 ### Introduction
+A digital transmission is a process of conveying information into  a discrete-time signal by measuring its amplitude at regular intervals. process called sampling takes measurements of the continuous message signal time intervals into a discrete-time signal. in this experiment, we will demonstrate the 2 common sampling techniques: natural sampling and sample-and-hold sampling.
 
-### Setup
+A natural sampling is a form of modulation technique that involves multiplying the analog signal to the pulse train(rectangular pulses), this will allow to follow the orignal waveform's shape during pulse duration, if the pulse is on, input signal passes through, if the pulse if off, no signal will output. A sample-and-hold(S&H) is an electronic device that takes the message's amplitude signal in each point and holds the value constant for a duration.
+
+
+![Natural sampling and S&H](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2011/Sampling%20demo.JPG)
+
+### Block diagram: Natural sampling
+
+![S&H BD](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2011/Sample%20and%20hold%20BD.JPG)
+
+### Setup: Natural sampling
 
 ### Output
 
- 
+!(
+
+
 </details>
 
 <details>
