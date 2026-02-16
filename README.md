@@ -125,7 +125,7 @@ A natural sampling is a form of modulation technique that involves multiplying t
 
 ### Output
 
-!(
+
 
 
 </details>
