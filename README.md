@@ -436,18 +436,75 @@ when decoding the PCM data, it shows the exact output we should expect, which is
 
 ### Introduction
 
-### Block diagram
+### Block diagram - PCM decoding with bandwidth limiter
+  
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2014/Bandwidth%20limiting%20on%20PCM%20decoding.jpg" />
+</div>
 
-### Setup
 
-### Output
+### Setup - PCM decoding with bandwidth limiter
+
+- Without LPF(Bandwidth limiter)
+  
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2014/Digital%20signal%20modeling%20with%20bandwidth%20limiter%20setup.jpg" />
+</div>
+
+- With LPF(Bandwidth limiter)
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2014/Digital%20signal%20modeling%20with%20bandwidth%20limiter%20and%20%20signal%20restoration%20setup.jpg" />
+</div>
+
+### Output- PCM decoding with bandwidth limiter
+
+- Without LPF(Bandwidth limiter)
+  
+https://github.com/user-attachments/assets/475d4c45-1348-4017-8844-98d8da1195f0
+
+- With LPF(Bandwidth limiter)
+
+  https://github.com/user-attachments/assets/387ec482-36ee-42d2-afc5-15907743c411
+
+### Block diagram - Digital modeling with bandwidth limiter
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2014/Sequence%20generator%20with%20SYNC%20to%20EXT.JPG" />
+</div>
+
+- Signal recovery
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2014/Bandiwdth%20limiting%20on%20sequence%20generator.JPG" />
+</div>
+
+
+### Setup - Digital modeling with bandwidth limiter
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2014/Digital%20signal%20modeling%20with%20bandwidth%20limiter%20setup.jpg" />
+</div>
+
+- Signal recovery
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment 14/Digital signal modeling with bandwidth limiter and%20 signal restoration setup.jpg" />
+</div>
+
+### Output - Digital modeling with bandwidth limiter
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2014/digital%20signal%20modeling%20with%20bandwidth%20limited%20digital%20signal%20output.jpg" />
+</div>
+
+- Signal recovery
+
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2014/digital%20signal%20modeling%20recovery%20otuput.jpg" />
+</div>
 
 ### Observation
-
-### Setup
-
-### Output
-
 
  
 </details>
