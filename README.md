@@ -9,7 +9,9 @@
 ### Introduction
 A Frequency modulation is a technique that transmits information into a varying frequency according to its amplitude and its signal. one of the advantage of using Frequency modulation is the ability to transmit message without picking up much any electrical noise to the medium, which is one of the disadvantage of AM and oher types of Amplitude modulation such as DSBSC, SSBSC because it is a varying amplitude signal, which is more susceptive from picking up electrical noise to medium, Frequency modulation also provides high quality sound when transmitting the information. However, the disadvantage of using Frequency modulation is that its transmission is complex compared to AM, and it's also expensive to operate. An FM detector usually needs an antenna, specifically a dipole antenna, to receive the transmitted signal while AM doesn't need to; this is because FM has a high-frequency component compared to AM, which creates a shorter wavelength, making the  signal propagation performance poor.
 
-![FM Demo](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%209/FM%20Demonstration.JPG)
+<div align="center">
+<img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%209/FM%20Demonstration.JPG" />
+</div>
 
 ### Block diagram
 
@@ -251,9 +253,14 @@ Modifying the setup, this time, instead of grounded input, we use the variable d
 
 ### Output
 
-![PCM Encoder output](https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a)
+https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a
+
 
 The binary code pattern shifted based on the amplitude of the applied DC voltage. Higher DC voltages produces more binary codes corresponding to higher quantization levels, while lower DC voltages produced less binary codes.
+
+### Additional observation
+
+Looking at the converted binary data of the PCM output at 0V, it shows that the data is not 000000 when the input is 0V. This is because most PCM coding uses a bipolar encoding scheme, where the mapping range usually from -2V to +2V across 256 steps. which means 0V is around the middle point, resulting to a minimum binary value rather than a complete 00000000 binary output, another reason is the Quantization levels where 0V may not align exactly wih the first quantization level due to the ADC dividing the total voltage span. Also, when looking at the second output where we applied a variable DC voltage, the output keeps changing even when the value of the input voltage is constant, this is probably because  the voltage is different for every sample input signal, or possibly due to small noise variation.
 
 
 </details>
@@ -275,20 +282,37 @@ Pulse Code Modulation (PCM) decoder is the counterpart of the PCM encoder used t
 
 ### Block diagram
 
+- Before filtering
+  
+![PCM Encoder and decoder BD](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2013/PCM%20Encoder%20and%20Decoder%20BD.JPG)
+
+- After filtering
+
+![PCM Encoder and decoder with LPF](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2013/PCM%20Encoder%20and%20Decoder%20before%20filtering%20BD.JPG)
+
 ### Setup
 
-![PCM Decoder setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2013/PCM%20Decoder%20setup.jpg)
+- Before filtering
+![PCM Decoder setup before filtering](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2013/PCM%20Decoder%20setup.jpg)
+
+- After filtering
+![PCM Decoder setup after filtering](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2013/PCM%20decoder%20setup%20with%20tunable%20LPF.jpg)
 
 ### Output
 
+- Before filtering
 ![PCM Decoder output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2013/PCM%20decoder%20output.jpg)
 
-- after filtering
+- After filtering
 ![PCM Output filtered](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2013/PCM%20decoder%20output%20after%20filtering.jpg)
 
 ### Additional Observation
 
-Looking at the converted binary data of the PCM output at 0V, it shows that the data is not 000000 when the input is 0V. This is because most PCM coding uses a bipolar encoding scheme, where the mapping range usually from -2V to +2V across 256 steps. which means 0V is around the middle point, resulting to a minimum binary value rather than a complete 00000000 binary output, another reason is the Quantization levels where 0V may not align exactly wih the first quantization level due to the ADC dividing the total voltage span. Also, when looking at the second output where we applied a variable DC voltage, the output keeps changing even when the value of the input voltage is constant, this is probably because  the voltage is different for every sample input signal, or possibly due to small noise variation or 
+Looking at the signal before the output uses LPF, the decoded output appears to be a steps, similar to a sample-to-hold sampling. This is because PCM decoders uses Digital to analog converter, which generally converts the PCM data to an equivalent analog signal based on the information the PCM data contains. Looking back at the encoding side, the Emona Telecoms trainer combines the 2 stages of generating a PAM before the input signal to be encoded: Sampling and Quantization. The signal must be converted into a discrete signal(equivalent to steps of analog signal) before it is encoded into a Pulse code.
+
+![PCM encoding block](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2013/block%20of%20encoding%20PCM.jpg)
+
+when decoding the PCM data, it shows the exact output we should expect, which is the quantized data
 
 </details>
 
@@ -341,6 +365,7 @@ Looking at the converted binary data of the PCM output at 0V, it shows that the 
     
 ### Experiment 13
   - https://www.egr.msu.edu/classes/ece458/radha/ss07Keyur/Lab-Handouts/Lab9PCM.pdf
+  - https://ecedunia.blogspot.com/2016/03/pulse-code-modulation.html
     
 ### Experiment 14
   -
