@@ -430,11 +430,19 @@ when decoding the PCM data, it shows the exact output we should expect, which is
 <details>
 <summary>Experiment 14 - BW limiting and restoring digital signals</summary>
 
-
-
 ### Objectives
 
+- To famlliarize bandwidth limiting
+- understand its effects in digital transmission
+- observe its effects in different digital modulation techniques
+- Analyze dthe istortion caused by a low-pass filter.
+- Restore a distorted digital signal using a comparator
+
+
+
 ### Introduction
+
+Bandwidth limiting is a process of limiting the frequency range of a digital signal, removing high-frequency components of the signal that cause rounding of sharp edges. an example of this is a square wave
 
 ### Block diagram - PCM decoding with bandwidth limiter
   
@@ -457,6 +465,8 @@ when decoding the PCM data, it shows the exact output we should expect, which is
 <img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2014/Digital%20signal%20modeling%20with%20bandwidth%20limiter%20and%20%20signal%20restoration%20setup.jpg" />
 </div>
 
+Based on the block diagram, we'll construct a PCM decoder with and without the bandwidth limiter and compare its effects after adding the LPF across the channel. 
+
 ### Output- PCM decoding with bandwidth limiter
 
 - Without LPF(Bandwidth limiter)
@@ -466,6 +476,8 @@ https://github.com/user-attachments/assets/475d4c45-1348-4017-8844-98d8da1195f0
 - With LPF(Bandwidth limiter)
 
   https://github.com/user-attachments/assets/387ec482-36ee-42d2-afc5-15907743c411
+
+comparing both output, when looking at the signal without the bandwidth limiter, the output of the decoded signal moves smooth when we vary the VDC signal, meanwhile adding the LPF(bandwidth limiter) across the channel looks distorted when we vary the VDC and returns into its normal output
 
 ### Block diagram - Digital modeling with bandwidth limiter
 
