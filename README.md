@@ -442,7 +442,7 @@ when decoding the PCM data, it shows the exact output we should expect, which is
 
 ### Introduction
 
-Bandwidth limiting is a process of limiting the frequency range of a digital signal, removing high-frequency components of the signal that cause rounding of sharp edges. an example of this is a square wave
+A medium acts as a filter, it lets a range of singal frequency pass unaffected while outside the frequency range are attenuated, if the bandwidth is not wide enough, the original message can cause distortion or partially loss of information, one of the most usefulBandwidth limiting is a process of limiting the frequency range of a signal, reducing the high-frequency components of the signal that cause rounding of sharp edges when recovering the message. Bandwidth limiting has an advantage when it comes to improving signal recovery,  blocking unwanted high-frequency signals that causes attenuation/distortion to the recovered information.
 
 ### Block diagram - PCM decoding with bandwidth limiter
   
@@ -516,9 +516,6 @@ comparing both output, when looking at the signal without the bandwidth limiter,
 <img width="500" height="500" alt="image" src="https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2014/digital%20signal%20modeling%20recovery%20otuput.jpg" />
 </div>
 
-### Observation
-
- 
 </details>
 
 
@@ -547,8 +544,5 @@ comparing both output, when looking at the signal without the bandwidth limiter,
   - https://ecedunia.blogspot.com/2016/03/pulse-code-modulation.html
   - https://codes.pratikkataria.com/communication-system/
     
-### Experiment 14
-  -
-
   
 </details>
