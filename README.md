@@ -206,6 +206,13 @@ A pulse code modulation(PCM) is a type of digital modulation technique that conv
 
 ![PCM](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2012/PCM%20demo.JPG)
 
+PCM contains 2 output pins:
+- Frame synchronization - it is an identifier that will align to the exact beginning of the data frame of an encoded data to identify and read the PCM data from the moment the bit starts and stops.
+- PCM data - this is the equivalent analog signal convered into digital data that has been decoded, in our setup, the EMONA telecoms trainer only has a 7 bit encoder.
+
+![PCM Actual demo](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2012/PCM%20Data%20actial%20representation.jpg)
+  
+
 ### Block diagram
 
 ![PCM Encoder block diagram with 0V input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%200V%20Input.JPG)
@@ -267,7 +274,14 @@ Pulse Code Modulation (PCM) decoder is the counterpart of the PCM encoder used t
 
 ### Setup
 
+![PCM Decoder setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2013/PCM%20Decoder%20setup.jpg)
+
 ### Output
+
+![PCM Decoder output](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2013/PCM%20decoder%20output.jpg)
+
+- after filtering
+![PCM Output filtered](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2013/PCM%20decoder%20output%20after%20filtering.jpg)
 
 ### Observation
 
@@ -326,7 +340,7 @@ Pulse Code Modulation (PCM) decoder is the counterpart of the PCM encoder used t
     
 ### Experiment 13
   - https://www.egr.msu.edu/classes/ece458/radha/ss07Keyur/Lab-Handouts/Lab9PCM.pdf
-  - 
+    
 ### Experiment 14
   -
 
