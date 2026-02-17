@@ -235,6 +235,9 @@ Observing the output, the frame synchronization (FS) signal appeared as a period
 
 ![FS and PCM DATA Comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2012/Frame%20synchronization%20and%20PCM%20output%20data.jpg)
 
+- Reading the equivalent binary data of the PCM output
+![PCM Data reading](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2012/PCM%20Data%20reading.JPG)
+
 ### Block diagram
 
 ![PCM Encoder block diagram with VDC input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%20Variable%20DC%20Input.JPG)
@@ -248,7 +251,7 @@ Modifying the setup, this time, instead of grounded input, we use the variable d
 
 ### Output
 
-[![PCM Encoder output]()](https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a)
+![PCM Encoder output](https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a)
 
 The binary code pattern shifted based on the amplitude of the applied DC voltage. Higher DC voltages produces more binary codes corresponding to higher quantization levels, while lower DC voltages produced less binary codes.
 
@@ -283,11 +286,9 @@ Pulse Code Modulation (PCM) decoder is the counterpart of the PCM encoder used t
 - after filtering
 ![PCM Output filtered](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2013/PCM%20decoder%20output%20after%20filtering.jpg)
 
-### Observation
+### Additional Observation
 
-### Setup
-
-### Output
+Looking at the converted binary data of the PCM output at 0V, it shows that the data is not 000000 when the input is 0V. This is because most PCM coding uses a bipolar encoding scheme, where the mapping range usually from -2V to +2V across 256 steps. which means 0V is around the middle point, resulting to a minimum binary value rather than a complete 00000000 binary output, another reason is the Quantization levels where 0V may not align exactly wih the first quantization level due to the ADC dividing the total voltage span. Also, when looking at the second output where we applied a variable DC voltage, the output keeps changing even when the value of the input voltage is constant, this is probably because  the voltage is different for every sample input signal, or possibly due to small noise variation or 
 
 </details>
 
