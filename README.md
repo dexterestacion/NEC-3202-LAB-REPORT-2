@@ -159,7 +159,7 @@ Based on the block diagram, the dual analog switch circuit will be replaced with
 
 ### Observation
 
-if the sampling frequency increased, it improved the quality of the reconstruction of the signal because it prevents aliasing and provide much accuracy when it comes to reconstructing the signal
+if the sampling frequency increased, it improved the quality of the reconstruction of the signal because it reduces aliasing and provides improves the quality when it comes to reconstructing the signal
 
 ### Setup: Natural sampling using VCO
 
@@ -204,15 +204,19 @@ if the sampling frequency increased, it improved the quality of the reconstructi
 
 A pulse code modulation(PCM) is a type of digital modulation technique that converts analog signal into binary sequence of 1s and 0s. PCM uses sampling, quantizing, and encoding in order for analog signal to be converted into binary system. This process was developed in 1937, primarily used for telephony, space communications, and digital audio processing during the 1960s and 70s.
 
+![PCM](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Additional%20data/Experiment%2012/PCM%20demo.JPG)
+
 ### Block diagram
 
 ![PCM Encoder block diagram with 0V input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%200V%20Input.JPG)
 
-the PCM encoder for EMONA combines the process of Sampling, Quantization, and encoding into a single block, making it easy to implement rather than using separate dual analog switch for sampling and quantization
+our input signal will be grounded and our clock signal would be 8kHz signal. the PCM encoder for EMONA combines the process of Sampling, Quantization, and encoding into a single block, making it easy to implement rather than using a separate dual analog switch for sampling and quantization.
 
 ### Setup
 
 ![PCM Encoder setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2012/FS%20and%20Digital%20signal%20comparison.jpg)
+
+Observing the output, the frame synchronization (FS) signal appeared as a periodic pulse that marked the beginning of each data frame. The 8 kHz clock signal was visible and maintained a constant frequency, which means it has a stable sampling operation
 
 ### Output
 
@@ -223,6 +227,7 @@ the PCM encoder for EMONA combines the process of Sampling, Quantization, and en
 - CH1(Frame synchronization) and CH2(PCM DATA) comparison
 
 ![FS and PCM DATA Comparison](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Output/Experiment%2012/Frame%20synchronization%20and%20PCM%20output%20data.jpg)
+
 ### Block diagram
 
 ![PCM Encoder block diagram with VDC input](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Block%20diagrams/Experiment%2012/PCM%20Encoder%20with%20Variable%20DC%20Input.JPG)
@@ -232,11 +237,61 @@ the PCM encoder for EMONA combines the process of Sampling, Quantization, and en
 
 ![PCM Encoder DCV setup](https://raw.githubusercontent.com/dexterestacion/NEC-3202-LAB-REPORT-2/refs/heads/main/Setup/Experiment%2012/PCM%20Setup%20DCV.jpg)
 
+Modifying the setup, this time, instead of grounded input, we use the variable dc voltage and observe the output.
+
 ### Output
 
 [![PCM Encoder output]()](https://github.com/user-attachments/assets/9bb37632-e221-4fab-a63e-4295a544365a)
 
+The binary code pattern shifted based on the amplitude of the applied DC voltage. Higher DC voltages produces more binary codes corresponding to higher quantization levels, while lower DC voltages produced less binary codes.
 
+
+</details>
+
+<details>
+<summary>Experiment 13 - PCM decoding</summary>
+
+
+### Objectives
+
+- To familiarize with the operation of the PCM Decoder module in the EMONA Telecommunications Trainer.
+- Understand the basic principle of PCM decoding and signal reconstruction.
+- To create a PCM decoder.
+- Analyze and compare the reconstructed output signal with the original input signal.
+
+### Introduction
+
+Pulse Code Modulation (PCM) decoder is the counterpart of the PCM encoder used to convert encoded PCM data back into its original analog signal. the decoder performs the process to reconstructing the signal, it receives the PCM data along with the clock frequency and the frame synchronization signals to ensure correct timing and proper alignment of each digital word. for our experiment, we'll stole the clock frequency and the frame synchronization to the encoder to make sure that the orignal message is recovered
+
+### Block diagram
+
+### Setup
+
+### Output
+
+### Observation
+
+### Setup
+
+### Output
+
+</details>
+
+
+<details>
+<summary>Experiment 14 - BW limiting and restoring digital signals</summary>
+
+
+
+### Objectives
+
+### Introduction
+
+### Block diagram
+
+### Setup
+
+### Output
 
 ### Observation
 
@@ -245,16 +300,7 @@ the PCM encoder for EMONA combines the process of Sampling, Quantization, and en
 ### Output
 
 
-</details>
-
-<details>
-<summary>Experiment 13 - PCM decoding</summary>
-In progress.
-</details>
-
-<details>
-<summary>Experiment 14 - BW limiting and restoring digital signals</summary>
-In progress.
+ 
 </details>
 
 
@@ -268,13 +314,19 @@ In progress.
   
 ### Experiment 10
   - https://user.eng.umd.edu/~tretter/commlab/c6713slides/ch8.pdf
-  - 
+  - https://ae-iitr.vlabs.ac.in/exp/voltage-comparator/theory.html
+    
 ### Experiment 11
-  -
+  - https://uomus.edu.iq/img/lectures21/MUCLecture_2025_225463.pdf
+    
 ### Experiment 12
-  -
+  - https://www.sciencedirect.com/topics/engineering/pulse-code-modulation
+  - https://www.eng.auburn.edu/~troppel/courses/TIMS-manuals-r5/TIMS%20Experiment%20Manuals/Student_Text/Vol-D1/D1-11.pdf
+  - https://byjus.com/physics/pulse-code-modulation/
+    
 ### Experiment 13
-  -
+  - https://www.egr.msu.edu/classes/ece458/radha/ss07Keyur/Lab-Handouts/Lab9PCM.pdf
+  - 
 ### Experiment 14
   -
 
